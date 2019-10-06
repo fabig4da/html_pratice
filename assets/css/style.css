@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700|Exo+2&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    /*background: #000*/
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-row: 100px 100px;
+    background: #dbdee3;
+  }
+  header img {
+    grid-column: 1;
+    grid-row: 1/span 2;
+    width: 100px;
+  }
+  header h1 {
+    grid-column: 2;
+    grid-row: 1;
+    background: #226777;
+  }
+  header nav {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  header nav ul {
+    display: flex;
+    list-style: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
