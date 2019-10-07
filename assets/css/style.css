@@ -152,5 +152,109 @@ main #login form input[type=submit] {
     height: 50px;
   }
 }
+@media screen and (max-width: 700px) {
+  body {
+    width: 100%;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 100px;
+    background: #88cddd;
+  }
+  header nav {
+    display: none;
+  }
+  header img {
+    width: 80px;
+    margin: 7% auto;
+  }
+  header h1 {
+    font-size: 1.5em;
+    line-height: 80px;
+    color: #579cac;
+  }
+
+  main #login img {
+    display: none;
+  }
+  main #login #form {
+    width: 100%;
+    height: 350px;
+    background: #b7bec8;
+    display: flex;
+  }
+  main #login #form form {
+    display: block;
+    width: 75%;
+    height: 80%;
+    margin: 5% auto;
+    background: #e6e6e7;
+  }
+  main #login #form form input[type=email],
+main #login #form form input[type=submit],
+main #login #form form input[type=password] {
+    display: block;
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  main #login #form form input[type=email] {
+    margin-top: 15%;
+  }
+  main #login #form form input[type=submit] {
+    background: #f60;
+  }
+  main #center {
+    width: 100%;
+    background: #d5f6ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main #center article {
+    width: 60%;
+    align-self: ceter;
+  }
+  main #center article:first-child {
+    margin-top: 10px;
+  }
+  main #center article:last-child {
+    margin-bottom: 20px;
+  }
+  main #center img {
+    width: 100%;
+    height: 200px;
+  }
+  main #center p {
+    display: none;
+  }
+  main #last article {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100px;
+    background: #88cddd;
+  }
+  main #last article img {
+    margin: 15px auto;
+    width: 100px;
+  }
+  main #last article h2 {
+    line-height: 100px;
+    font-family: "Exo 2";
+    font-weight: bold;
+  }
+  main #last p {
+    display: none;
+  }
+
+  footer {
+    background: #226777;
+    color: #ffffff;
+    text-align: center;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
