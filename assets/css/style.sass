@@ -46,18 +46,20 @@
             grid-template-columns: 65% 35%
             grid-template-rows: 350px
             background: #b7bec8
+            margin-top: 5px
             
             img
                 width:100%
                 height: 350px
+            #form
+                display: flex
+                
             form
                 display: block
                 width: 80%
                 height: 80%
                 background: #e6e6e6
-                margin:5% auto
-                display: flex
-                
+                margin:5% auto                
                 
                 input[type="email"], 
                 input[type="password"],
@@ -67,9 +69,71 @@
                     padding:8px
                     margin:0 auto
                     margin-bottom:10px
+                input[type="email"]
+                    margin-top:20%
+                input[type="submit"]
+                    background:#ff6600
+        #center
+            display: grid
+            grid-template-columns: 33% 33% 33%
+            grid-column-gap:0.5%
+            margin-top:5px
+            article
+                background: #d5f5ff 
+                font-family: Comfortaa
+            img
+
+                width: 100%
+                height: 300px
+        #last
+            display: grid
+            .first
+                display: grid
+                grid-template-columns: 25% 75%
+                grid-template-rows: 30px 200px
+                grid-row-gap: 5px
+                margin-top: 5px
+                img 
+                    grid-column: 1
+                    grid-row: 1 /spand 2
+                    width: 100%
+                    height: 235px
+                h2 
+                    background: #d5f6ff
+                    font-family: "Exo 2"
+                    font-weight: bold
+                p 
+                    background: #88cddd
+                    font-family: Comfortaa
+            .second
+                display: grid
+                grid-template-columns: 75% 25%
+                grid-template-rows: 30px 200px
+                grid-row-gap: 5px
+                margin-top: 5px
+                img 
+                    grid-column: 2
+                    grid-row: 1 /spand 2
+                    width: 100%
+                    height: 235px
+                h2 
+                    background: #d5f6ff
+                    font-family: "Exo 2"
+                    font-weight: bold
+                p 
+                    background: #88cddd
+                    font-family: Comfortaa
+    footer 
+        background: #226777
+        color: #ffffff
+        text-align: center
+        height: 50px
+
+                    
+
+
+
                 
-                div
-                    margin-top:10px
             
 
 

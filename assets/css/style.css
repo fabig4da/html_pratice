@@ -52,10 +52,14 @@
     grid-template-columns: 65% 35%;
     grid-template-rows: 350px;
     background: #b7bec8;
+    margin-top: 5px;
   }
   main #login img {
     width: 100%;
     height: 350px;
+  }
+  main #login #form {
+    display: flex;
   }
   main #login form {
     display: block;
@@ -63,7 +67,6 @@
     height: 80%;
     background: #e6e6e6;
     margin: 5% auto;
-    display: flex;
   }
   main #login form input[type=email],
 main #login form input[type=password],
@@ -74,8 +77,79 @@ main #login form input[type=submit] {
     margin: 0 auto;
     margin-bottom: 10px;
   }
-  main #login form div {
-    margin-top: 10px;
+  main #login form input[type=email] {
+    margin-top: 20%;
+  }
+  main #login form input[type=submit] {
+    background: #ff6600;
+  }
+  main #center {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 0.5%;
+    margin-top: 5px;
+  }
+  main #center article {
+    background: #d5f5ff;
+    font-family: Comfortaa;
+  }
+  main #center img {
+    width: 100%;
+    height: 300px;
+  }
+  main #last {
+    display: grid;
+  }
+  main #last .first {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 30px 200px;
+    grid-row-gap: 5px;
+    margin-top: 5px;
+  }
+  main #last .first img {
+    grid-column: 1;
+    grid-row: 1/spand 2;
+    width: 100%;
+    height: 235px;
+  }
+  main #last .first h2 {
+    background: #d5f6ff;
+    font-family: "Exo 2";
+    font-weight: bold;
+  }
+  main #last .first p {
+    background: #88cddd;
+    font-family: Comfortaa;
+  }
+  main #last .second {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 30px 200px;
+    grid-row-gap: 5px;
+    margin-top: 5px;
+  }
+  main #last .second img {
+    grid-column: 2;
+    grid-row: 1/spand 2;
+    width: 100%;
+    height: 235px;
+  }
+  main #last .second h2 {
+    background: #d5f6ff;
+    font-family: "Exo 2";
+    font-weight: bold;
+  }
+  main #last .second p {
+    background: #88cddd;
+    font-family: Comfortaa;
+  }
+
+  footer {
+    background: #226777;
+    color: #ffffff;
+    text-align: center;
+    height: 50px;
   }
 }
 
