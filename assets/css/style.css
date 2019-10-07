@@ -7,24 +7,28 @@
 
 @media screen and (min-width: 700px) {
   body {
-    /*background: #000*/
+    width: 99%;
+    margin: 0 auto;
   }
 
   header {
     display: grid;
-    grid-template-columns: 20% 80%;
-    grid-row: 100px 100px;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 60px 60px;
     background: #dbdee3;
   }
   header img {
     grid-column: 1;
     grid-row: 1/span 2;
     width: 100px;
+    margin: 10px auto;
   }
   header h1 {
     grid-column: 2;
     grid-row: 1;
     background: #226777;
+    width: 100%;
+    text-align: center;
   }
   header nav {
     grid-column: 2;
@@ -33,6 +37,45 @@
   header nav ul {
     display: flex;
     list-style: none;
+  }
+  header nav ul li a {
+    text-decoration: none;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-row: auto auto auto;
+  }
+  main #login {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 350px;
+    background: #b7bec8;
+  }
+  main #login img {
+    width: 100%;
+    height: 350px;
+  }
+  main #login form {
+    display: block;
+    width: 80%;
+    height: 80%;
+    background: #e6e6e6;
+    margin: 5% auto;
+    display: flex;
+  }
+  main #login form input[type=email],
+main #login form input[type=password],
+main #login form input[type=submit] {
+    display: block;
+    width: 80%;
+    padding: 8px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  main #login form div {
+    margin-top: 10px;
   }
 }
 
